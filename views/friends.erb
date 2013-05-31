@@ -1,0 +1,10 @@
+<% @rows.each do |row| %>
+	<%= row['name']  %>
+	<%= row['age']  %>
+	<%= row['gender'] %>
+	<%= row['image'] %> 
+	<img src= "/images/twitter_icon.png" alt="Tweet!" /><%= row['twitter'] %> 
+	<img src= "/images/GitHub32px.png" alt="Code!" /><%= row['github'] %>
+	<p></p>
+<% end %>
+
