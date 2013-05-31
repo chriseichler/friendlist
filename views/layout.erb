@@ -1,26 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head> 
-    <meta charset="utf-8">
-    <title>To Do List</title>
-    <link rel='stylesheet' href='bootstrap/css/bootstrap.css'>
+     <head>
+          <link rel='stylesheet' href='bootstrap/css/bootstrap.css'>
     <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
     <script src='bootstrap/js/bootstrap.js'></script>
-</head>
-<body>
-    <div class='container'>
-        <div class='row'>
-            <div class="navbar navbar-inverse">
-                <div class="navbar-inner">
-                    <a class="brand" href="#"><span id="blu">FRIENDS</span></a>
-                    <ul class="nav">
-                        <li class="active"><a href="/">Home</a></li>
-                        <li class="active"><a href="/create">Create Page</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    <%= yield %>
-    <footer class="modal-footer">Made by us.</footer>
-</body>
-</html>
+          <meta charset="utf-8">
+          <title>FRIENDS</title>
+     </head>
+     
+     <body>
+          <div class='container'>
+               <div class='row'>
+                    <div class="navbar navbar-inverse">
+                      <%= erb :nav %>
+                         <div class="navbar-inner">
+                              <a class="brand" href="#"><span id="blu"> FRIENDS</span><span id="specc"> List</span></a>
+                              <ul class="nav">
+                                   <li><a href="/">Home</a></li>
+                                   <li><a href="/friends">Friends</a></li>
+                                  <li><a href="/new">New Friend</a></li>
+
+                              </ul>
+                         </div>
+                    </div>
+                    <%= yield %>
+                    <footer class="modal-footer">
+                         Made by us.
+                    </footer>
+               </div>
+            </div>   
+          </body>
+     </html>

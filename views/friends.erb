@@ -1,9 +1,9 @@
-hi
 <% @rows.each do |row| %>
-    <p>Name: <%= row['name'] %></p>
-    <p>Age: <%= row['age'] %></p>
-    <p>Gender: <%= row['gender'] %></p>    
-    <p>Image: <%= row['image'] %></p>    
-    <p>Twitter: <%= row['twitter'] %></p>
-    <p>Github: <%= row['github'] %></p>
+	<%= row['name']  %>
+	<%= row['age']  %>
+	<%= row['gender'] %>
+	<%= row['image'] %> 
+    <a href="<%= row['twitter'] %>"><img src= "/images/twitter_icon.png" alt="Tweet!" /></a>
+    <a href="<%= row['github'] %>"><img src= "/images/GitHub32px.png" alt="Code!" /></a>
+	<p></p>
 <% end %>
