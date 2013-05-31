@@ -1,0 +1,9 @@
+hi
+<% @rows.each do |row| %>
+    <p>Name: <%= row['name'] %></p>
+    <p>Age: <%= row['age'] %></p>
+    <p>Gender: <%= row['gender'] %></p>    
+    <p>Image: <%= row['image'] %></p>    
+    <p>Twitter: <%= row['twitter'] %></p>
+    <p>Github: <%= row['github'] %></p>
+<% end %>
